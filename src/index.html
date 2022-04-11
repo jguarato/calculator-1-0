@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed&display=swap" rel="stylesheet">
+    <title> Calculadora </title>
+  </head>
+
+  <body>
+
+    <div class="calculator-wrapper">
+
+      <div class="display-panel">
+        <h2 id="displayText"></h2>
+      </div>
+
+      <div class="buttons-wrapper">
+        <div class="buttons-row">
+          <button class="btn-cce" onClick="resetLastAction()">CE</button>
+          <button class="btn-cce" onClick="resetCalculator()">C</button>
+        </div>
+        <div class="buttons-row">
+          <button class="btn-numbers" onClick="getSpecialOperator(`%`)">%</button>
+          <button class="btn-numbers" onClick="getSpecialOperator(`exp`)">x<sup>2</sup></button>
+          <button class="btn-numbers" onClick="getSpecialOperator(`sqr`)">√</button>
+          <button class="btn-numbers" onClick="getOperator(`/`)">&#247</button>
+        </div>
+        <div class="buttons-row">
+          <button class="btn-numbers" onClick="getNumber(7)">7</button>
+          <button class="btn-numbers" onClick="getNumber(8)">8</button>
+          <button class="btn-numbers" onClick="getNumber(9)">9</button>
+          <button class="btn-numbers" onClick="getOperator(`*`)">&#215</button>
+        </div>
+        <div class="buttons-row">
+          <button class="btn-numbers" onClick="getNumber(4)">4</button>
+          <button class="btn-numbers" onClick="getNumber(5)">5</button>
+          <button class="btn-numbers" onClick="getNumber(6)">6</button>
+          <button class="btn-numbers" onClick="getOperator(`-`)">-</button>
+        </div>
+        <div class="buttons-row">
+          <button class="btn-numbers" onClick="getNumber(1)">1</button>
+          <button class="btn-numbers" onClick="getNumber(2)">2</button>
+          <button class="btn-numbers" onClick="getNumber(3)">3</button>
+          <button class="btn-numbers" onClick="getOperator(`+`)">+</button>
+        </div>
+        <div class="buttons-row">
+          <button class="btn-numbers" type="button" disabled>+/-</button>
+          <button class="btn-numbers" onClick="getNumber(0)">0</button>
+          <button class="btn-numbers" onClick="putDecimalNumber()">.</button>
+          <button class="btn-numbers" onClick="getResult()">=</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </body>
+
+  <footer>
+    made by <a href="https://codepen.io/jguarato">jguarato</a> 🐞
+  </footer>
+
+</html>
