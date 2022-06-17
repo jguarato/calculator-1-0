@@ -1,4 +1,4 @@
-## 🖩 Calculator 1.0 
+## 📱 Calculator 1.0 
 
 * A web application developed with JavaScript;
 * A calculator with its functionalities enabled;
